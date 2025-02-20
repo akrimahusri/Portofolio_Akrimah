@@ -1,3 +1,2 @@
 # Portofolio
-Nama  : Akrimah Usri
-NPM   : 2308107010009
+Nama  : Akrimah Usri (2308107010009)
