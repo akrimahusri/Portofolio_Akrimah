@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Akrimah Usri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Default Light Mode */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: #2d2d2d;
+            color: white;
+        }
+
+        .dark-mode .bg-blue-600 {
+            background-color: #4A90E2;
+        }
+
+        .dark-mode .bg-blue-600:hover {
+            background-color: #357ABD;
+        }
+
+        /* Modify background and text color for sections in dark mode */
+        .dark-mode .bg-white {
+            background-color: #333;
+        }
+
+        .dark-mode .bg-gray-50 {
+            background-color: #444;
+        }
+
+        .dark-mode .text-gray-800 {
+            color: #ddd;
+        }
+
+        /* Ensure form inputs are visible in dark mode */
+        .dark-mode input, .dark-mode textarea {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body class="light-mode" id="body">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">My Portofolio</a>
+            <div class="space-x-6 text-white">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+                <button onclick="toggleTheme()" class="hover:underline">Toggle Theme</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen bg-cover bg-center relative" style="background-image: url('images/background.jpg');" data-aos="fade-in">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center text-white relative z-10">
+            <h1 class="text-5xl font-semibold mt-20">Hi! Welcome to My Site✨</h1>
+            <p class="text-xl mt-4">Saya Akrimah si calon web developer paling kece🔥🔥</p>
+            <a href="#projects" class="mt-6 inline-block py-2 px-4 bg-blue-600 text-white rounded-full hover:bg-blue-700">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <img src="images/foto-saya.jpg" alt="Your Name" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+            <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+            <p class="text-lg"><p>
+                👋 Halo! Saya <strong>Akrimah Usri</strong>, tapi cukup panggil saya Akrimah😃.  
+                Sebagai mahasiswi Informatika dengan npm <strong>2308107010009</strong>, saya selalu antusias mengeksplorasi dunia pengembangan web dan data science. Selain itu, saya juga punya kecintaan mendalam terhadap membaca, karena setiap halaman selalu membuka wawasan baru! 📚✨.  
+                Saya percaya bahwa teknologi bukan sekadar alat, tetapi solusi untuk menciptakan perubahan. Oleh karena itu, saya terus belajar dan bereksperimen dalam membangun solusi digital yang bermanfaat.  
+                Siap berkolaborasi? Yuk, kenal lebih jauh! 🚀</p>
+                </p>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">What People Say</h2>
+            <div class="flex justify-center space-x-8">
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"Saya kagum dengan cara Akrimah berpikir dan menyelesaikan masalah teknologi. Dia memiliki logika yang tajam dan pendekatan yang sistematis dalam menyelesaikan setiap tantangan."</p>
+                    <p class="mt-4 font-semibold">Isda Dara, Teman Seperjuangan</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"Akrimah selalu membawa energi positif dan semangat dalam tim. Dia tidak hanya bekerja keras, tetapi juga menginspirasi orang di sekitarnya!"</p>
+                    <p class="mt-4 font-semibold">Maulizar, Rekan BEM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+            <div class="flex justify-center space-x-8">
+                <!-- Ikon MS Word -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/word.png" alt="MS Word" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">MS Word</p>
+                </div>
+                <!-- Ikon MS Excel -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/excel.png" alt="MS Excel" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">MS Excel</p>
+                </div>
+                <!-- Ikon MS Power POint -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/power-point.png" alt="MS Power Point" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">MS Power Point</p>
+                </div>
+                <!-- Ikon Visual Studio Code -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/vsc.png" alt="Visual Studio Code" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">Visual Studio Code</p>
+                </div>
+                <!-- Ikon Python -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/python.png" alt="Pyhton" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">Python</p>
+                </div>
+                <!-- Ikon Xampp -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-32 text-center">
+                    <img src="images/xampp.png" alt="Xampp" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">Xampp</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 flex justify-center" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">My Projects</h2>
+            <div class="flex justify-center">
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <img src="images/project1.png" alt="Project 2" class="w-full rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">Web Portofolio</h3>
+                    <p class="text-gray-600">Dirancang menggunakan HTML dan CSS</p>
+                    <a href="#" class="mt-4 inline-block py-2 px-4 bg-blue-600 text-white rounded-full hover:bg-blue-700">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+            <form action="https://formspree.io/f/mjkgjnle"  method="POST" class="max-w-md mx-auto">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 border rounded-lg" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 border rounded-lg" required>
+                <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-4 mb-4 border rounded-lg" required></textarea>
+                <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Social Media Icons -->
+    <div class="mt-6 flex justify-center">
+        <a href="https://wa.me/6282267073861" target="_blank" class="text-blue-600 hover:text-blue-800 mx-4">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://instagram.com/akrimhsr" target="_blank" class="text-pink-600 hover:text-pink-800 mx-4">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/akrimahusri" target="_blank" class="text-blue-700 hover:text-blue-900 mx-4">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/akrimahusri" target="_blank" class="text-gray-800 hover:text-black mx-4">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+
+    <!-- Our Partners Section -->
+    <section class="py-20 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">My Partners</h2>
+            <div class="flex justify-center space-x-8">
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <img src="images/partner1-logo.png" alt="Partner 1" class="w-32 h-32 mx-auto mb-4">
+                    <p class="mt-4 font-semibold">Himpunan Mahasiswa Informatika USK</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <img src="images/partner2-logo.png" alt="Partner 2" class="w-32 h-32 mx-auto mb-4">
+                    <p class="mt-4 font-semibold">Badan Eksekutif Mahasiswa FMIPA USK</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <img src="images/partner3-logo.png" alt="Partner 3" class="w-32 h-32 mx-auto mb-4">
+                    <p class="mt-4 font-semibold">OSISMADA Ruhul Islam Anak Bangsa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6 text-center">
+        <p>&copy; 2025 [Akrimah Usri]. All rights reserved.</p>
+        <p>Dibuat dengan ❤️</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and theme toggle -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function toggleTheme() {
+            let body = document.getElementById('body');
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+        }
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init();
+    </script>
+</body>
+</html>
