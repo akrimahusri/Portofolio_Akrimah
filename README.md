@@ -1,2 +1,2 @@
 # Portofolio
-Nama  : Akrimah Usri (2308107010009)
+Akrimah Usri (2308107010009)
